@@ -23,6 +23,7 @@ content {
     justify-content: flex-start;
     align-items: center;
     height: auto;
+    min-height: 80vh;
 }
 
 header {
@@ -143,7 +144,6 @@ footer > p > a:hover {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #ddd;
     max-width: 800px;
 }
 
@@ -155,7 +155,10 @@ footer > p > a:hover {
 }
 
 .experience tr:nth-child(even) {
-    background-color: #d5cabd;
+    background-color: #a293d6;
+    /* #9883E5
+    #286570
+    #D5CABD */
 }
 
 /* CSS for Projects page */
@@ -185,10 +188,6 @@ footer > p > a:hover {
     margin: 1em;
     border-radius: 30px;
     border: 2px solid #286570;
-}
-
-.projects-list h3 {
-    color: black;
 }
 
 .projects-list a {
@@ -222,7 +221,8 @@ footer > p > a:hover {
 .interests iframe {
     border-radius: 10px;
     width: 100%;
-    height: 315px;
+    height: auto;
+    aspect-ratio: 16/9;
 }
 
 /* CSS for Contact page */
@@ -231,22 +231,37 @@ footer > p > a:hover {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 4em;
+    grid-column-gap: 3em;
     grid-row-gap: 4em;
     max-width: 800px;
-    background-color: #286570;
-    border: 1px solid #9883e5;
+    background-color: #a695e2;
     border-radius: 10px;
     padding: 1em;
+    height: 100%;
 }
 
 .contact .grid img {
     border-radius: 10px;
     height: 50px;
+    max-width: 50px;
 }
 
 .contact .grid > * {
-    color: black;
+    color: rgb(226, 225, 225);
     text-decoration: none;
     font-weight: bold;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .grid > *:hover {
+    color: #9883e5;
+}
+
+.contact img {
+    margin: 2em;
+    height: 500px;
+    border-radius: 10px;
 }
