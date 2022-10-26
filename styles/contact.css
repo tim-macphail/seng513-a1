@@ -21,13 +21,12 @@
     color: rgb(226, 225, 225);
     text-decoration: none;
     font-weight: bold;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact .grid > *:hover {
+.contact .grid > a:hover {
     color: #9883e5;
 }
 
@@ -35,4 +34,11 @@
     margin: 2em;
     height: 500px;
     border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: red; */
 }
