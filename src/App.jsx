@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const Page = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+    <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-4xl font-bold mb-8">Timothy Macphail</h1>
+      <div className="flex justify-between w-48">
+        <a
+          href="mailto:timothy.macphail@gmail.com"
+          className="text-blue-500 hover:text-blue-700"
+        >
+          Email
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <div className="h-6 border-l-2 border-gray-400"></div>
+        <a
+          href="https://www.linkedin.com/in/timothy-macphail/"
+          className="text-blue-500 hover:text-blue-700"
+        >
+          LinkedIn
+        </a>
+        <div className="h-6 border-l-2 border-gray-400"></div>
+        <a
+          href="https://github.com/tim-macphail"
+          className="text-blue-500 hover:text-blue-700"
+        >
+          GitHub
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default Page;
