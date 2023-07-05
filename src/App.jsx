@@ -1,12 +1,33 @@
 import { useRef } from "react";
-import "./App.css";
-import DefaultCarousel from "./Carousel";
 
 const Page = () => {
+  const projects = [
+    {
+      title: "Lifeline",
+      description: "Lifeline uses AI to automatically organize your deadlines",
+      imageUrl: "big_ol_logo.png",
+    },
+    {
+      title: "Lifeline2",
+      description: "Lifeline uses AI to automatically organize your deadlines",
+      imageUrl: "big_ol_logo.png",
+    },
+    {
+      title: "Lifeline3",
+      description: "Lifeline uses AI to automatically organize your deadlines",
+      imageUrl: "big_ol_logo.png",
+    },
+    {
+      title: "Lifeline4",
+      description: "Lifeline uses AI to automatically organize your deadlines",
+      imageUrl: "big_ol_logo.png",
+    },
+  ];
+
   const projectsRef = useRef(null);
   return (
-    <div className="w-">
-      <div className="flex flex-col items-center justify-center h-screen bg-emerald-400">
+    <div>
+      <div className="flex flex-col items-center justify-center h-screen bg-emerald-300">
         <h1 className="text-4xl font-bold mb-8">Timothy Macphail</h1>
         <div className="flex justify-between w-96">
           <a
@@ -48,12 +69,31 @@ const Page = () => {
         </button>
       </div>
       <div
-        className="flex flex-col items-center justify-center h-screen bg-amber-600"
+        className="flex flex-col items-center justify-center bg-amber-500"
         ref={projectsRef}
       >
         <h1 className="text-4xl font-bold ">Projects</h1>
-        <DefaultCarousel />
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+          {projects.map((p) => (
+            <Project
+              title={p.title}
+              description={p.description}
+              imageUrl={p.imageUrl}
+              key={p.title}
+            />
+          ))}
+        </div>
       </div>
+    </div>
+  );
+};
+
+const Project = ({ title, description, imageUrl }) => {
+  return (
+    <div className="bg-white rounded-lg shadow-md p-4">
+      <img className="w-full mb-4 rounded-lg" src={imageUrl} alt={title} />
+      <h2 className="text-xl font-semibold">{title}</h2>
+      <p className="text-gray-600">{description}</p>
     </div>
   );
 };
