@@ -1,26 +1,31 @@
+/* eslint-disable react/prop-types */
 import { useRef } from "react";
 
 const Page = () => {
   const projects = [
     {
       title: "Lifeline",
-      description: "Lifeline uses AI to automatically organize your deadlines",
-      imageUrl: "big_ol_logo.png",
+      description:
+        "Lifeline takes the stress out of managing important deadlines for your courses. In just a few clicks, compile your deadlines from your course outlines 📄, into calendar reminders ⏰ and a spreadsheet to-do list 📈.",
+      imageUrl: "lifeline.png",
     },
     {
-      title: "Lifeline2",
-      description: "Lifeline uses AI to automatically organize your deadlines",
-      imageUrl: "big_ol_logo.png",
+      title: "River Surf Conditions",
+      description:
+        "Uses a TensorFlow.js machine learning model to predict the quality of river waves based on open-source data provided by Alberta Environment and Parks, presented on a React front-end.",
+      imageUrl: "rsc.jpg",
     },
     {
-      title: "Lifeline3",
-      description: "Lifeline uses AI to automatically organize your deadlines",
-      imageUrl: "big_ol_logo.png",
+      title: "Password Manager",
+      description:
+        "A full-stack cloud-based password manager built with React, Node.js, Express, and MongoDB.",
+      imageUrl: "pm.png",
     },
     {
-      title: "Lifeline4",
-      description: "Lifeline uses AI to automatically organize your deadlines",
-      imageUrl: "big_ol_logo.png",
+      title: "Point-Tracker",
+      description:
+        "A collection of scripts in TypeScript to create and configure automatically updating spreadsheets for <a>Schulich Ignite</a> using the Google Apps Script API, eliminating hours of manual data entry per week.",
+      imageUrl: "schulich-ignite.jpg",
     },
   ];
 
@@ -91,7 +96,9 @@ const Page = () => {
 const Project = ({ title, description, imageUrl }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-4">
-      <img className="w-full mb-4 rounded-lg" src={imageUrl} alt={title} />
+      <div className="w-full mb-4 rounded-lg h-2/3 bg-white aspect-square flex flex-col justify-center">
+        <img className="max-h-full rounded-lg" src={imageUrl} alt={title} />
+      </div>
       <h2 className="text-xl font-semibold">{title}</h2>
       <p className="text-gray-600">{description}</p>
     </div>
