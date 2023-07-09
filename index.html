@@ -29,9 +29,6 @@
       <a href="index.html" class="navbar-brand ml-lg-3">
         <h1 class="m-0 display-5 text-primary">Tim Macphail</h1>
       </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
         <div class="navbar-nav m-auto py-0">
           <a href="#home" class="nav-item nav-link active">Home</a>
@@ -39,26 +36,14 @@
           <a href="#portfolio" class="nav-item nav-link">Projects</a>
         </div>
       </div>
+      <a href="index.html" class="navbar-brand ml-lg-3">
+        <h1 class="text-light d-none d-lg-block">Tim Macphail</h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </nav>
     <!-- Navbar End -->
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <!-- 16:9 aspect ratio -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Video Modal End -->
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh">
@@ -73,9 +58,19 @@
             <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
             <div class="typed-text d-none">Backend Developer, Leader, Student</div>
             <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-              <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-github"></i></a>
-              <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a class="btn btn-light btn-social mr-2" href="#"><i class="far fa-envelope"></i></a>
+              <a class="btn btn-light btn-social mr-2" href="https://github.com/tim-macphail" target="_blank"><i class="fab fa-github"></i></a>
+              <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/timothy-macphail" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                class="btn btn-light btn-social mr-2"
+                href="mailto:timothy.macphail@gmail.com"
+                onclick="copyToClipboard('timothy.macphail@gmail.com')"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="Copy to Clipboard"
+                ><i class="far fa-envelope"></i
+              ></a>
               <a href="https://drive.google.com/file/d/1D45qLaHtW9Ykewy_Fcb0JkfqcPGu09wr/view?usp=sharing" target="_blank" class="btn btn-outline-light ml-3"
                 >View Resume</a
               >
@@ -99,30 +94,13 @@
           </div>
           <div class="col-lg-7">
             <h3 class="mb-4">Full Stack Developer</h3>
+            <p>Hi! I'm Tim and I'm in my 3rd year working towards a bachelor's degree in Computer Science at the University of Calgary.</p>
             <p>
-              Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam
-              ea lorem eirmod duo sit ipsum. Amet dolor stet lorem diam dolor justo et dolor dolor dolor
+              I enjoy working with other people and I'm interested in full stack development and security engineering. Currently I'm on internship at
+              <a href="https://mda.space" target="_blank">MDA</a> doing backend engineering on satellite ground systems. I'm hoping to try the Big Tech Company™️ experience for
+              my next internship in summer 2024.
             </p>
-            <div class="row mb-3">
-              <div class="col-sm-6 py-2">
-                <h6>Name: <span class="text-secondary">Timothy Macphail</span></h6>
-              </div>
-              <div class="col-sm-6 py-2">
-                <h6>Degree: <span class="text-secondary">Bachelor's (in progress)</span></h6>
-              </div>
-              <div class="col-sm-6 py-2">
-                <h6>Experience: <span class="text-secondary">3 Years</span></h6>
-              </div>
-              <div class="col-sm-6 py-2">
-                <h6>Phone: <span class="text-secondary">+1 403 903 4218</span></h6>
-              </div>
-              <div class="col-sm-6 py-2">
-                <h6>Email: <span class="text-secondary">timothy.macphail@gmail.com</span></h6>
-              </div>
-              <div class="col-sm-6 py-2">
-                <h6>Location: <span class="text-secondary">Vancouver, Canada</span></h6>
-              </div>
-            </div>
+            <p>Outside of work, my interests including skiing ⛷, surfing 🏄‍♂️, and climbing 🧗‍♂️. Let's get in touch!</p>
           </div>
         </div>
       </div>
@@ -209,9 +187,17 @@
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
       <div class="container text-center">
         <div class="d-flex justify-content-center">
-          <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-github"></i></a>
-          <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a class="btn btn-light btn-social mr-2" href="#"><i class="far fa-envelope"></i></a>
+          <a class="btn btn-light btn-social mr-2" href="https://github.com/tim-macphail" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/timothy-macphail" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a
+            class="btn btn-light btn-social mr-2"
+            href="mailto:timothy.macphail@gmail.com"
+            onclick="copyToClipboard('timothy.macphail@gmail.com')"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Copy to Clipboard"
+            ><i class="far fa-envelope"></i
+          ></a>
         </div>
       </div>
     </div>
@@ -239,5 +225,15 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+      function copyToClipboard(text) {
+        const el = document.createElement("textarea");
+        el.value = text;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand("copy");
+        document.body.removeChild(el);
+      }
+    </script>
   </body>
 </html>
