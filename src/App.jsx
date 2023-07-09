@@ -32,7 +32,7 @@ const Page = () => {
   const projectsRef = useRef(null);
   return (
     <div>
-      <div className="flex flex-col items-center justify-center h-screen bg-emerald-300">
+      <div className="flex flex-col items-center justify-center h-screen bg-slate-200">
         <h1 className="text-4xl font-bold mb-8">Timothy Macphail</h1>
         <div className="flex justify-between w-96">
           <a
@@ -74,10 +74,10 @@ const Page = () => {
         </button>
       </div>
       <div
-        className="flex flex-col items-center justify-center bg-amber-500"
+        className="flex flex-col items-center justify-center bg-slate-200"
         ref={projectsRef}
       >
-        <h1 className="text-4xl font-bold ">Projects</h1>
+        <h1 className="text-4xl font-bold mt-8">Projects</h1>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
           {projects.map((p) => (
             <Project
