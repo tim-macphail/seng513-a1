@@ -31,8 +31,8 @@ const Page = () => {
 
   const projectsRef = useRef(null);
   return (
-    <div>
-      <div className="flex flex-col items-center justify-center h-screen bg-slate-200">
+    <main className="bg-slate-200  flex flex-col items-center">
+      <section className="h-screen flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold mb-8">Timothy Macphail</h1>
         <div className="flex justify-between w-96">
           <a
@@ -72,11 +72,8 @@ const Page = () => {
           <p>Projects</p>
           <span className="material-icons">expand_more</span>
         </button>
-      </div>
-      <div
-        className="flex flex-col items-center justify-center bg-slate-200"
-        ref={projectsRef}
-      >
+      </section>
+      <section className="flex flex-col items-center justify-center max-w-7xl" ref={projectsRef}>
         <h1 className="text-4xl font-bold mt-8">Projects</h1>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
           {projects.map((p) => (
@@ -88,14 +85,14 @@ const Page = () => {
             />
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
 const Project = ({ title, description, imageUrl }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4">
+    <div className="bg-white rounded-lg shadow-lg p-4">
       <div className="w-full mb-4 rounded-lg h-2/3 bg-white aspect-square flex flex-col justify-center">
         <img className="max-h-full rounded-lg" src={imageUrl} alt={title} />
       </div>
