@@ -67,6 +67,12 @@
             $('.scroll-to-bottom').fadeIn('slow');
         }
     });
+    $('.scroll-to-bottom').click(function () {
+        var aboutOffset = $('#about').offset().top;
+        var navbarHeight = $('.navbar').outerHeight();
+        $('html, body').animate({scrollTop: aboutOffset - navbarHeight/2}, 1500, 'easeInOutExpo');
+        return false;
+    });
 
 
     // Skills
